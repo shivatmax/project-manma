@@ -1,0 +1,38 @@
+.image-container {
+    
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: visible;
+  }
+  
+  .image-1{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform: translateX(5%) translateY(5%);
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+  }
+  .image-2 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform: translateX(-5%) translateY(-5%);
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+  }
+  
+  .image-container:hover .image-1 {
+    transform: translateX(30%) translateY(30%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .image-container:hover .image-2 {
+    transform: translateX(-30%) translateY(-30%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  
